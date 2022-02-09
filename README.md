@@ -31,7 +31,7 @@ Other serialization methods for comparison:
 
 Results are using Node v16.13.2 on Ryzen 3950X (3.8GHz)
 
-**sample-datatypes.json:**
+### sample-datatypes.json
 
 |type|library|ops/sec|variance|# runs|
 |-|-|-:|-:|-:|
@@ -63,7 +63,7 @@ Results are using Node v16.13.2 on Ryzen 3950X (3.8GHz)
 |decode|cbor (browser)|68,160|±0.32%|94|
 |decode|JSON|332,022|±0.33%|98|
 
-**sample-small.json:**
+### sample-small.json
 
 |type|library|ops/sec|variance|# runs|
 |-|-|-:|-:|-:|
@@ -95,7 +95,7 @@ Results are using Node v16.13.2 on Ryzen 3950X (3.8GHz)
 |decode|cbor (browser)|704,485|±0.46%|94|
 |decode|JSON|1,631,474|±0.59%|94|
 
-**sample-medium.json:**
+### sample-medium.json
 
 |type|library|ops/sec|variance|# runs|
 |-|-|-:|-:|-:|
@@ -127,7 +127,7 @@ Results are using Node v16.13.2 on Ryzen 3950X (3.8GHz)
 |decode|cbor (browser)|244,330|±0.63%|89|
 |decode|JSON|917,510|±0.68%|91|
 
-**sample-large.json:**
+### sample-large.json
 
 |type|library|ops/sec|variance|# runs|
 |-|-|-:|-:|-:|
@@ -159,7 +159,7 @@ Results are using Node v16.13.2 on Ryzen 3950X (3.8GHz)
 |decode|cbor (browser)|7,392|±0.75%|69|
 |decode|JSON|48,048|±1.00%|92|
 
-**sample-huge.json:**
+### sample-huge.json
 
 NOTE: what-the-pack and cbor are omitted, due to errors!
 
