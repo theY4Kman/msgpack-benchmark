@@ -35,29 +35,29 @@ var Benchmark = require('benchmark')
       encode: require('notepack.io/browser/encode'),
       decode: require('notepack.io/browser/decode')
     },
-    'what-the-pack': {
-      encode: require('what-the-pack').encode,
-      decode: require('what-the-pack').decode
-    },
-    'what-the-pack (browser)': {
-      encode: require('what-the-pack/browser').encode,
-      decode: require('what-the-pack/browser').decode
-    },
-    'cbor (node)': {
-      encode: require('cbor').encode,
-      decode: require('cbor').decode
-    },
-    'cbor (browser)': {
-      encode: require('cbor-js').encode,
-      decode: require('cbor-js').decode
-    },
+    // 'what-the-pack': {
+    //   encode: require('what-the-pack').encode,
+    //   decode: require('what-the-pack').decode
+    // },
+    // 'what-the-pack (browser)': {
+    //   encode: require('what-the-pack/browser').encode,
+    //   decode: require('what-the-pack/browser').decode
+    // },
+    // 'cbor (node)': {
+    //   encode: require('cbor').encode,
+    //   decode: require('cbor').decode
+    // },
+    // 'cbor (browser)': {
+    //   encode: require('cbor-js').encode,
+    //   decode: require('cbor-js').decode
+    // },
     'JSON': {
       encode: JSON.stringify,
       decode: JSON.parse
     },
   }
 
-  , sampleFiles = ["sample-datatypes.json", "sample-small.json", "sample-medium.json", "sample-large.json"]
+  , sampleFiles = [ "sample-huge.json"]
 
 
 function validate(name, data, encoded) {
